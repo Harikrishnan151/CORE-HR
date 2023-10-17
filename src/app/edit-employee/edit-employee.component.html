@@ -1,0 +1,124 @@
+<!-- {{employee | json}} -->
+<!-- {{department | json}} -->
+<div class="container">
+  <div class="row">
+    <h1 class="text-center mt-3 m text-primary">Edit Employee Details</h1>
+
+    <div class="col-6 mt-5">
+      <!-- image -->
+      <img  [src]="employee.Photourl" alt="">
+
+    </div>
+    <div class="col-6">
+      <div id="card1" class="card my-4 " style="max-width: 400px;">
+      <!-- form -->
+      <form>
+
+        <!-- Id -->
+        <div class="form-floating">
+          <input [(ngModel)]="employee.id" name="id" type="text" class="form-control" id="floatingInput"
+            placeholder="Id">
+          <label for="floatingInput">Employe code : </label>
+        </div>
+
+        <!-- Full Name -->
+        <div class="form-floating ">
+          <input [(ngModel)]="employee.name" name="name" type="text" class="form-control" id="floatingInput"
+            placeholder="Full Name">
+          <label for="floatingInput">Full Name</label>
+        </div>
+        <!-- Photourl -->
+        <div class="form-floating ">
+          <input [(ngModel)]="employee.Photourl" name="photourl" type="text" class="form-control" id="floatingPhoto"
+            placeholder="Photo url">
+          <label for="floatingPassword">Photo url</label>
+        </div>
+
+        <!-- email -->
+        <div class="form-floating ">
+          <input [(ngModel)]="employee.email" name="email" type="email" class="form-control" id="floatingemail"
+            placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+
+        <!-- mobile -->
+        <div class="form-floating ">
+          <input [(ngModel)]="employee.mobile" name="mobile" type="text" class="form-control" id="floatingMobile"
+            placeholder="Mobie">
+          <label for="floatingInput">Mobile</label>
+        </div>
+
+
+
+        <!-- designation -->
+        <div class="form-floating ">
+          <input [(ngModel)]="employee.designation" name="designation" type="text" class="form-control"
+            id="floatingtitle" placeholder="designation">
+          <label for="floatingtitle">Designation :</label>
+        </div>
+
+        <!-- Bloodgroup -->
+        <div class="form-floating ">
+          <input [(ngModel)]="employee.bloodgroup" name="bloodgroup" ype="text" class="form-control" id="floatingtitle"
+            placeholder="Bloodgroup">
+          <label for="floatingtitle">Bloodgroup :</label>
+        </div>
+
+        <!-- Date of birth -->
+        <div class="form-floating ">
+          <input [(ngModel)]="employee.DOB" name="DOB" type="date" class="form-control" id="floatingcompany"
+            placeholder="Date of Birth">
+          <label for="floatingInput">Date of Birth</label>
+        </div>
+
+        <!-- Date of joining -->
+        <div class="form-floating ">
+          <input [(ngModel)]="employee.DOJ" name="DOJ" type="date" class="form-control" id="floatingcompany"
+            placeholder="Date of joining">
+          <label for="floatingInput">Date of joining</label>
+        </div>
+
+        <div class=" form-floating">
+          <select [(ngModel)]="employee.genderid" name="genderid" class="form-control">
+            <option selected hidden and disabled>select </option>
+            <option [value]="gen.id" *ngFor="let  gen of genders">{{gen.name}}</option>
+            <!-- <option value= >FEMALE</option>
+                        <option value= >OTHERS</option> -->
+          </select>
+        </div>
+
+        <!-- department -->
+        <div class="mb- form-floating">
+          <select [(ngModel)]="employee.departmentid" name="departmentid" class="form-control">
+            <option selected hidden and disabled>select</option>
+            <option [value]="dep.id" *ngFor="let dep of department">{{dep.name}}</option>
+            <!-- <option value= >ACCOUNTS DEPARTMENT</option>
+                            <option value= >HR DEPARTMENT/option>
+                                <option value= >SALES DEPARTMENT</option> -->
+          </select>
+        </div>
+
+
+
+
+        <!-- Button -->
+        <div class="text-center ">
+          <input (click)="updateEmployee()" routerLink="/hrManager/allEmployees" type="button" value="submit"
+            class="btn btn-outline-success my-3 mx-4">
+
+            <input  routerLink="/hrManager/allEmployees" type="button"  value="Back" class="btn btn-outline-primary my-3">
+        </div>
+        
+
+
+      </form>
+     </div>
+    </div>
+  
+   
+
+  </div>
+
+</div>
+
+

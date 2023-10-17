@@ -1,0 +1,127 @@
+<!-- {{employee |json}} -->
+<div class="container">
+  <h1 class="text-center text-primary my-3 ">Add-Employee-Details</h1>
+  <div class="row mt-5">
+    
+
+    <div class="col-7 ">
+      <!-- image -->
+      <h3 class="text-center text-primary">Get all paperwork collected & organized</h3>
+      <p class="text-primary">Streamline HR onboarding processes by allowing new hires to upload their documentation paper-free, directly from their mobile devices.
+         Rest assured that all certificates and licenses have been submitted and automatically organized, waiting for your approval.</p>
+    
+      <div class="col-6"> 
+        <img id="img1" src="https://connecteam.com/wp-content/uploads/2023/03/Desktop_Hero.jpg" alt="">
+      </div>
+      <div class="col-6">
+        <img id="img2" src="https://connecteam.com/wp-content/uploads/2023/03/desktop1-1.jpg" alt="">
+      </div>
+    </div>
+
+
+
+
+    <div class="col-5">
+      <!-- form -->
+      <form>
+
+        <!-- Id -->
+        <div class="form-floating mt-3 mb-3">
+          <input [(ngModel)]="employee.id" name="id" type="text" class="form-control" id="floatingInput"
+            placeholder="Id">
+          <label for="floatingInput">Employe code : </label>
+        </div>
+
+        <!-- Full Name -->
+        <div class="form-floating mt-3 mb-3">
+          <input [(ngModel)]="employee.name" name="name" type="text" class="form-control" id="floatingInput"
+            placeholder="Full Name">
+          <label for="floatingInput">Full Name</label>
+        </div>
+        <!-- Photourl -->
+        <div class="form-floating mb-3">
+          <input [(ngModel)]="employee.Photourl" name="photourl" type="text" class="form-control" id="floatingPhoto"
+            placeholder="Photo url">
+          <label for="floatingPassword">Photo url</label>
+        </div>
+
+        <!-- email -->
+        <div class="form-floating mb-3">
+          <input [(ngModel)]="employee.email" name="email" type="email" class="form-control" id="floatingemail"
+            placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+
+        <!-- mobile -->
+        <div class="form-floating mb-3">
+          <input [(ngModel)]="employee.mobile" name="mobile" type="text" class="form-control" id="floatingMobile"
+            placeholder="Mobie">
+          <label for="floatingInput">Mobile</label>
+        </div>
+
+
+
+        <!-- designation -->
+        <div class="form-floating mb-3">
+          <input [(ngModel)]="employee.designation" name="designation" type="text" class="form-control"
+            id="floatingtitle" placeholder="designation">
+          <label for="floatingtitle">Designation :</label>
+        </div>
+
+        <!-- Bloodgroup -->
+        <div class="form-floating mb-3">
+          <input [(ngModel)]="employee.bloodgroup" name="bloodgroup" type="text" class="form-control" id="floatingtitle"
+            placeholder="Bloodgroup">
+          <label for="floatingtitle">Bloodgroup :</label>
+        </div>
+
+        <!-- Date of birth -->
+        <div class="form-floating mb-3">
+          <input [(ngModel)]="employee.DOB" name="DOB" type="date" class="form-control" id="floatingcompany"
+            placeholder="Date of Birth">
+          <label for="floatingInput">Date of Birth</label>
+        </div>
+
+        <!-- Date of joining -->
+        <div class="form-floating mb-3">
+          <input [(ngModel)]="employee.DOJ" name="DOJ" type="date" class="form-control" id="floatingcompany"
+            placeholder="Date of joining">
+          <label for="floatingInput">Date of joining</label>
+        </div>
+
+        <div class="mb-3 form-floating">
+          <select [(ngModel)]="employee.genderid" name="genderid" class="form-control">
+            <option selected hidden and disabled>{{employee.genderid}} </option>
+            <option [value]="gen.id" *ngFor="let gen of allGender">{{gen.name}}</option>
+            <!-- <option value= >FEMALE</option>
+                        <option value= >OTHERS</option> -->
+          </select>
+        </div>
+
+        <!-- department -->
+        <div class="mb-3 form-floating">
+          <select [(ngModel)]="employee.departmentid" name="departmentid" class="form-control">
+            <option selected hidden and disabled>{{employee.departmentid}}</option>
+            <option [value]="department.id" *ngFor="let department of allDepartments">{{department.name}}</option>
+            <!-- <option value= >ACCOUNTS DEPARTMENT</option>
+                            <option value= >HR DEPARTMENT/option>
+                                <option value= >SALES DEPARTMENT</option> -->
+          </select>
+        </div>
+
+
+
+
+        <!-- Button -->
+        <div class="text-center">
+          <input (click)="addEmployee()" routerLink="/hrManager/allEmployees" type="button" value="submit"
+            class="btn btn-outline-primary my-3">
+        </div>
+
+
+      </form>
+
+    </div>
+   
+  </div>
+</div>

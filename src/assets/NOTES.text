@@ -1,0 +1,36 @@
+1.  ng new HRMANAGEMENT-APP
+    to run terminal - ng serve --open
+
+2.  Then clear all contents form app.component.html
+
+3. install third party apps such as bootstarp, fontawesome google fontawesome
+     angular json-
+         "styles": [
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.js"]
+
+          ->In index.html
+       <-------bootstrap link---->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  
+          ->Install fontawsome
+          npm install --save @fortawesome/fontawesome-free(treminal)
+
+4. Create html pages or components 
+            ->Hr Manager - view all employees - ng g c HrManager
+            ->Add Employees- add new Employee- ng g c addEmployee
+            ->View Contact - View particular Employee - ng g c viewEmployee
+            ->Edit Contact - edit specific Employee - ng  g c editEmployee
+            ->PageNotFound - Page not found - ng  g c pageNotFound
+            ->header - header - ng g c header
+            ->footer - footer - ng g c footer
+
+5.open app.compoment.html -> add 
+                            <header></header>
+                            <router-outlet></router-outlet>
+                            <footer></footer>
+
+then design  the pages

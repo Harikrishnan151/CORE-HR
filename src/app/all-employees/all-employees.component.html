@@ -1,0 +1,37 @@
+
+
+<div class="container">
+   <h1 class="text-center my-3 text-primary">ALL EMPLOYEES</h1>
+   <form class="d-flex my-2 mx-2">
+    <input (keyup)="search($event)"  class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
+<div class="row mx-1">
+
+<div class="card mx-3  my-4"  *ngFor="let emp of allemployees | filter: searchKey:'name'">
+    <img  [src]="emp.Photourl" class="card-img-top mt-2" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">  <span style="color: #2381D9;"> {{emp.name}} </span></h5>
+      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Designation : {{emp.designation}}</li>
+      <li class="list-group-item">Email : {{emp.email}}</li>
+      <li class="list-group-item">Mobile : {{emp.mobile}}</li>
+    </ul>
+    <!-- <div class="card-body">
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div> -->
+    <div class="card-body ">
+        <button id="btn1" routerLink="/hrManager/allEmployees/view/{{emp.id}}" class="btn mx-3"><b>View</b></button>
+        <button id="btn2" routerLink="/hrManager/edit/{{emp.id}}" class="btn  mx-2"><b>Edit</b></button>
+        <button id="btn3" (click)="deleteEmployee(emp.id)" class="btn  mx-2"><b>Delete</b></button>
+      </div>
+  </div>
+
+
+</div>
+
+
+</div>

@@ -1,0 +1,45 @@
+<div class="container">
+  <h3 class="text-center text-primary mt-4">Employee Detials</h3>
+  <div class="row">
+
+    <div class="col-6">
+      
+        <img   [src]="employee.Photourl" class="img-fluid rounded-start" alt="...">
+      
+     
+    </div>
+    <div id="carddiv" class="col-6">
+      <div id="card1" class="card my-4 mx-5" style="max-width: 400px;">
+       
+          
+          <div class="col-md-12">
+            <div class="card-body">
+              <h5 class="card-title ">Name : {{employee.name}}</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item my-1">Employe code : {{employee.id}} </li>
+                <li class="list-group-item my-1">Designation : {{employee.designation}} </li>
+                <li class="list-group-item my-1">Department : {{departmentName}} </li>
+                <li class="list-group-item my-1">Email : {{employee.email}}</li>
+                <li class="list-group-item my-1">Mobile : {{employee.mobile}} </li>
+                <li class="list-group-item my-1">Date of Birth : {{employee.DOB}} </li>
+                <li class="list-group-item my-1">Gender : {{gendername}}</li>
+                <li class="list-group-item my-1">Bloodgroup : {{employee.bloodgroup}} </li>
+                <li class="list-group-item my-1">Date of joining : {{employee.DOJ}}  </li> 
+            </ul>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+
+
+
+
+    <div class="text-center my-3">
+      <button routerLink="/hrManager/allEmployees" type="button" class="btn btn-outline-primary">Back</button>
+    </div>
+
+  </div>
+
+  
+</div>

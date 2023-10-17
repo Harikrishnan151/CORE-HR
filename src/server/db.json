@@ -1,0 +1,157 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Hari",
+      "Photourl": "https://img.freepik.com/free-photo/portrait-young-man-with-dark-curly-hair_176532-8137.jpg?size=626&ext=jpg&ga=GA1.2.136342962.1682655329&semt=sph",
+      "designation": "IT Analyst",
+      "mobile": 9847219893,
+      "genderid": 1,
+      "bloodgroup": "B-",
+      "email": "hari@gmailcom",
+      "DOB": "1999-12-15",
+      "DOJ": "2021-01-22",
+      "departmentid": 1
+    },
+    {
+      "id": 2,
+      "name": "Rahul k s",
+      "Photourl": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg&ga=GA1.2.136342962.1682655329&semt=sph",
+      "designation": "sales head",
+      "mobile": 7890123533,
+      "genderid": "1",
+      "bloodgroup": "B+",
+      "email": "rahul@gmailcom",
+      "DOB": "1994-10-04",
+      "DOJ": "2014-05-20",
+      "departmentid": 3
+    },
+    {
+      "id": 3,
+      "name": "Anoop s",
+      "Photourl": "https://img.freepik.com/free-photo/handsome-bearded-guy-posing-against-white-wall_273609-20597.jpg?size=626&ext=jpg&ga=GA1.2.136342962.1682655329&semt=sph",
+      "designation": "accountent",
+      "mobile": 8921042359,
+      "genderid": "1",
+      "bloodgroup": "A+",
+      "email": "anoop12@gmailcom",
+      "DOB": "1999-12-19",
+      "DOJ": "2018-01-23",
+      "departmentid": 2
+    },
+    {
+      "id": 4,
+      "name": "Anjana",
+      "Photourl": "https://img.freepik.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg?size=626&ext=jpg&ga=GA1.2.136342962.1682655329&semt=sph",
+      "designation": "Hr head",
+      "mobile": 9847219893,
+      "genderid": "2",
+      "bloodgroup": "B-",
+      "email": "anjana@gmailcom",
+      "DOB": "1997-04-02",
+      "DOJ": "2023-05-22",
+      "departmentid": 4
+    },
+    {
+      "id": 5,
+      "name": "Megha",
+      "Photourl": "https://img.freepik.com/free-photo/woman-with-pleasant-smile-dark-hair-dressed-casual-pink-t-shirt-has-white-perfect-teeth-rejoices-receiving-compliment_176532-9468.jpg?size=626&ext=jpg",
+      "designation": "Software developer",
+      "mobile": 9847219893,
+      "genderid": "2",
+      "bloodgroup": "B+",
+      "email": "megha@gmailcom",
+      "DOB": "1997-05-03",
+      "DOJ": "2020-04-12",
+      "departmentid": 4
+    },
+    {
+      "id": 4,
+      "name": "Clinten",
+      "Photourl": "https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?size=626&ext=jpg&ga=GA1.2.136342962.1682655329&semt=sph",
+      "designation": "Developer",
+      "mobile": 9847219893,
+      "genderid": "1",
+      "bloodgroup": "AB+",
+      "email": "clinten@gmailcom",
+      "DOB": "1997-04-13",
+      "DOJ": "2020-05-22",
+      "departmentid": 1
+    },
+    {
+      "departmentid": "4",
+      "genderid": "1",
+      "id": "10",
+      "name": "Vishnu",
+      "Photourl": "https://img.freepik.com/premium-photo/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg?size=626&ext=jpg&ga=GA1.2.136342962.1682655329&semt=sph",
+      "email": "vishnu@gmail.com",
+      "mobile": "7602630982",
+      "designation": "Marketing Head",
+      "bloodgroup": "A+",
+      "DOB": "1999-02-28",
+      "DOJ": "2023-07-30"
+    },
+    {
+      "departmentid": "1",
+      "genderid": "1",
+      "id": "11",
+      "name": "Sankar",
+      "Photourl": "https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.2.136342962.1682655329&semt=sph",
+      "email": "sankar@gmail.com",
+      "mobile": "63098611958",
+      "designation": "Software Tester",
+      "bloodgroup": "B+",
+      "DOB": "1984-07-30",
+      "DOJ": "2021-06-22"
+    },
+    {
+      "departmentid": "2",
+      "genderid": "2",
+      "id": "15",
+      "name": "Aparna",
+      "Photourl": "https://img.freepik.com/free-photo/smiling-happy-caucasian-girl-looking-friendly_176420-20734.jpg?size=626&ext=jpg",
+      "email": "aparna@gmail.com",
+      "mobile": "88459110867",
+      "designation": "Accountant",
+      "bloodgroup": "A+",
+      "DOB": "1997-01-15",
+      "DOJ": "2023-05-15"
+    }
+  ],
+  "department": [
+    {
+      "id": "1",
+      "name": "IT department"
+    },
+    {
+      "id": "2",
+      "name": "Accounts department"
+    },
+    {
+      "id": "3",
+      "name": "Sales department"
+    },
+    {
+      "id": "4",
+      "name": "Marketing department"
+    },
+    {
+      "id": "5",
+      "name": "Hr department"
+    }
+  ],
+  "gender": [
+    {
+      "id": "1",
+      "name": "Male"
+    },
+    {
+      "id": "2",
+      "name": "Female"
+    },
+    {
+      "id": "3",
+      "name": "Others"
+    }
+  ]
+}

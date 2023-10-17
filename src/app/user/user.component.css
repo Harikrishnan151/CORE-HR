@@ -1,0 +1,23 @@
+li{
+    background-color: #2381D9;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+#img1{
+    width: 400px;
+}
+li:hover{
+   color: black;
+}
+
+
+@media screen  and (min-width:200px) and (max-width:320px) {
+    .row{
+      flex-direction: column;
+    }
+    #img1{
+        width: 300px;
+    }
+
+}

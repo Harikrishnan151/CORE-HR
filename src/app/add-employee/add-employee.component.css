@@ -1,0 +1,49 @@
+h1{
+    font-family: 'Monoton', cursive;
+    font-weight: 500;
+}
+#img1{
+    width: 640px;
+    height: 390px;
+    padding-left: 10px;
+    margin-top: -19px;
+}
+#img2{
+    width: 690px;
+    height: 450px;
+    margin-left: 40px;
+    margin-top: -23px;
+    
+}
+@media screen  and (min-width:200px) and (max-width:320px) {
+    .row{
+        flex-direction: column;
+    }
+    *{
+        text-align: justify;
+    }
+    #img1{
+        width: 300px;
+        height: 200px;
+        padding-left: 30px;
+        margin-top: -19px;
+    }
+    #img2{
+        align-items: center;
+        width: 300px;
+        height: 180px;
+        margin-left: 1px;
+        margin-top: 6px;
+        padding-left: 60px;
+        
+    }
+    form{
+        width: 300px;
+    }
+    p{
+        text-align: center;
+    }
+    .col-7 {
+        width: 320px;
+    }
+}
